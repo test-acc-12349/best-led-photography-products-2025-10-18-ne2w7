@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Best LED Photography Products - High quality professional photography equipment with fast shipping and free returns">
+    <meta name="keywords" content="LED photography, professional lighting, photography equipment">
+    <meta name="author" content="Best Photography Products">
+    <title>Best LED Photography Products | Professional Photography Equipment</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .hero-overlay {
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.3) 100%);
+        }
+        .gradient-accent {
+            background: linear-gradient(135deg, #1f2937 0%, #374151 100%);
+        }
+        .feature-card {
+            transition: all 300ms ease-in-out;
+        }
+        .feature-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        .btn-primary {
+            transition: all 300ms ease-in-out;
+        }
+        .btn-primary:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+        .testimonial-card {
+            transition: all 300ms ease-in-out;
+        }
+        .testimonial-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        .faq-item {
+            transition: all 300ms ease-in-out;
+        }
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+            opacity: 1;
+        }
+        .faq-answer {
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+            transition: all 300ms ease-in-out;
+        }
+        .mobile-menu {
+            transition: all 300ms ease-in-out;
+        }
+        .mobile-menu.show {
+            display: block;
+        }
+        .nav-link {
+            transition: color 300ms ease-in-out;
+        }
+        .nav-link:hover {
+            color: #374151;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900 font-sans">
+    <!-- Announcement Bar -->
+    <div class="bg-gray-900 text-white text-center py-3 text-sm font-medium">
+        <i class="fas fa-truck mr-2"></i>Fast Worldwide Shipping (5 days delivery) | Free Returns on All Orders
+    </div>
+
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <i class="fas fa-camera text-2xl text-gray-900 mr-2"></i>
+                    <span class="text-xl font-bold text-gray-900">BPP</span>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="nav-link text-gray-700 hover:text-gray-900 font-medium">Home</a>
+                    <a href="#features" class="nav-link text-gray-700 hover:text-gray-900 font-medium">Features</a>
+                    <a href="#benefits" class="nav-link text-gray-700 hover:text-gray-900 font-medium">Benefits</a>
+                    <a href="#about" class="nav-link text-gray-700 hover:text-gray-900 font-medium">About</a>
+                    <a href="#testimonials" class="nav-link text-gray-700 hover:text-gray-900 font-medium">Testimonials</a>
+                    <a href="#faq" class="nav-link text-gray-700 hover:text-gray-900 font-medium">FAQ</a>
+                    <a href="#contact" class="nav-link text-gray-700 hover:text-gray-900 font-medium">Contact</a>
+                </nav>
+
+                <!-- Search & CTA -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <div class="relative">
+                        <input type="text" placeholder="Search..." class="bg-gray-100 rounded-lg py-2 px-4 w-40 text-sm focus:outline-none focus:ring-2 focus:ring-gray-400">
+                        <i class="fas fa-search absolute right-3 top-2.5 text-gray-500"></i>
+                    </div>
+                    <a href="https://bpp.com" class="btn-primary bg-gray-900 text-white px-6 py-2 rounded-lg font-semibold hover:bg-gray-800 transform transition-all duration-300">
+                        Buy Now
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-button md:hidden text-gray-900 focus:outline-none" onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu hidden md:hidden bg-white border-t border-gray-200 py-4 px-4">
+            <nav class="flex flex-col space-y-4">
+                <a href="#home" class="text-gray-700 hover:text-gray-900 font-medium py-2">Home</a>
+                <a href="#features" class="text-gray-700 hover:text-gray-900 font-medium py-2">Features</a>
+                <a href="#benefits" class="text-gray-700 hover:text-gray-900 font-medium py-2">Benefits</a>
+                <a href="#about" class="text-gray-700 hover:text-gray-900 font-medium py-2">About</a>
+                <a href="#testimonials" class="text-gray-700 hover:text-gray-900 font-medium py-2">Testimonials</a>
+                <a href="#faq" class="text-gray-700 hover:text-gray-900 font-medium py-2">FAQ</a>
+                <a href="#contact" class="text-gray-700 hover:text-gray-900 font-medium py-2">Contact</a>
+                <div class="pt-4 border-t border-gray-200">
+                    <a href="https://bpp.com" class="btn-primary block bg-gray-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-800 text-center transform transition-all duration-300">
+                        Buy Now
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative h-screen md:h-96 flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1504093376055-b3094b674dcb?w=1600&h=900&fit=crop&q=80');"></div>
+        <div class="absolute inset-0 hero-overlay"></div>
+        <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight tracking-tight">
+                Best LED Photography Products
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-100 mb-8 leading-relaxed">
+                Buy The Best
+            </p>
+            <p class="text-lg md:text-xl text-gray-200 mb-10 leading-relaxed">
+                Professional-grade LED lighting equipment for photographers who demand excellence
+            </p>
+            <a href="https://bpp.com" class="btn-primary inline-block bg-white text-gray-900 px-8 md:px-12 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transform transition-all duration-300 shadow-lg">
+                Shop Now <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 tracking-tight">
+                    Why Choose Our LED Photography Products
+                </h2>
+                <p class="text-lg text-gray-600 leading-relaxed">
+                    Discover the features that make us the preferred choice for professional photographers worldwide
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Feature 1: High Quality -->
+                <div class="feature-card bg-white rounded-xl p-8 border border-gray-200 hover:border-gray-400">
+                    <div class="flex items-center justify-center w-16 h-16 bg-gray-100 rounded-lg mb-6">
+                        <i class="fas fa-star text-2xl text-gray-900"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">High Quality</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Premium LED technology delivering consistent, flicker-free lighting with exceptional color accuracy and professional-grade performance for demanding studio environments.
+                    </p>
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li><i class="fas fa-check text-gray-900 mr-2"></i>Color Temperature: 3200K-5600K</li>
+                        <li><i class="fas fa-check text-gray-900 mr-2"></i>CRI 95+ for accurate color reproduction</li>
+                        <li><i class="fas fa-check text-gray-900 mr-2"></i>Durable aluminum construction</li>
+                    </ul>
+                </div>
+
+                <!-- Feature 2: For Professionals -->
+                <div class="feature-card bg-white rounded-xl p-8 border border-gray-200 hover:border-gray-400">
+                    <div class="flex items-center justify-center w-16 h-16 bg-gray-100 rounded-lg mb-6">
+                        <i class="fas fa-briefcase text-2xl text-gray-900"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">For Professionals</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Engineered specifically for professional photographers, videographers, and content creators who require reliable, high-performance equipment for critical work.
+                    </p>
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li><i class="fas fa-check text-gray-900 mr-2"></i>Studio-grade components</li>
+                        <li><i class="fas fa-check text-gray-900 mr-2"></i>Advanced dimming controls</li>
+                        <li><i class="fas fa-check text-gray-900 mr-2"></i>Professional warranty support</li>
+                    </ul>
+                </div>
+
+                <!-- Feature 3: Get Best Photos -->
+                <div class="feature-card bg-white rounded-xl p-8 border border-gray-200 hover:border-gray-400">
+                    <div class="flex items-center justify-center w-16 h-16 bg-gray-100 rounded-lg mb-6">
+                        <i class="fas fa-image text-2xl text-gray-900"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Get Best Photos</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Achieve stunning results with consistent, professional lighting that brings out the best in every shot, from portraits to product photography and beyond.
+                    </p>
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li><i class="fas fa-check text-gray-900 mr-2"></i>Uniform light distribution</li>
+                        <li><i class="fas fa-check text-gray-900 mr-2"></i>Reduced shadows and hot spots</li>
+                        <li><i class="fas fa-check text-gray-900 mr-2"></i>Enhanced subject definition</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-16 md:py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 tracking-tight">
+                    Our Commitment to You
+                </h2>
+                <p class="text-lg text-gray-600 leading-relaxed">
+                    We believe in providing exceptional value with every purchase
+                </p>
+            </div>
+
+            <!-- Benefit 1: Low Cost -->
+            <div class="mb-16 md:mb-24">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+                    <div class="order-2 md:order-1">
+                        <img src="https://images.unsplash.com/photo-1556740714-a8395b3bf30f?w=800&h=600&fit=crop&q=80" alt="Affordable LED Photography Lighting" class="rounded-xl shadow-lg w-full h-auto object-cover">
+                    </div>
+                    <div class="order-1 md:order-2 bg-white rounded-xl p-8 md:p-12">
+                        <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Low Cost</h3>
+                        <p class="text-gray-600 leading-relaxed mb-6 text-lg">
+                            We believe professional-quality lighting shouldn't break the bank. Our competitive pricing strategy allows photographers of all levels to access premium LED equipment without compromising on quality or performance.
+                        </p>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <i class="fas fa-check text-green-600 text-xl mr-4 mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 mb-1">Competitive Pricing</h4>
+                                    <p class="text-gray-600 text-sm">Premium quality at affordable rates</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-check text-green-600 text-xl mr-4 mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 mb-1">Flexible Payment Plans</h4>
+                                    <p class="text-gray-600 text-sm">Installment options available for larger purchases</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-check text-green-600 text-xl mr-4 mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 mb-1">Regular Discounts</h4>
+                                    <p class="text-gray-600 text-sm">Seasonal sales and bundle offers</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="https://bpp.com" class="btn-primary inline-block mt-8 bg-gray-900 text-white px-8 py-3 rounded-lg font-semibold hover:bg-gray-800 transform transition-all duration-300">
+                            View Pricing
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Benefit 2: Fast Shipping -->
+            <div class="mb-16 md:mb-24">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center bg-gray-100 rounded-xl overflow-hidden">
+                    <div class="p-8 md:p-12">
+                        <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Fast Shipping</h3>
+                        <p class="text-gray-600 leading-relaxed mb-6 text-lg">
+                            Get your professional LED lighting equipment quickly with our expedited shipping service. We partner with trusted logistics providers to ensure your order arrives safely and on schedule, so you can start creating amazing content right away.
+                        </p>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <i class="fas fa-check text-green-600 text-xl mr-4 mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 mb-1">5-Day Worldwide Delivery</h4>
+                                    <p class="text-gray-600 text-sm">Fast shipping to over 150 countries</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-check text-green-600 text-xl mr-4 mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 mb-1">Real-Time Tracking</h4>
+                                    <p class="text-gray-600 text-sm">Monitor your shipment every step of the way</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-check text-green-600 text-xl mr-4 mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 mb-1">Secure Packaging</h4>
+                                    <p class="text-gray-600 text-sm">Professional packaging protects your equipment</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="https://bpp.com" class="btn-primary inline-block mt-8 bg-gray-900 text-white px-8 py-3 rounded-lg font-semibold hover:bg-gray-800 transform transition-all duration-300">
+                            Order Now
+                        </a>
+                    </div>
+                    <div class="h-96 md:h-full">
+                        <img src="https://images.unsplash.com/photo-1502982720700-bfff97f2ecac?w=800&h=600&fit=crop&q=80" alt="Fast Shipping Delivery" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Benefit 3: Free Returns -->
+            <div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+                    <div>
+                        <img src="https://images.unsplash.com/photo-1471341971476-ae15ff5dd4ea?w=800&h=600&fit=crop&q=80" alt="Free Returns Guarantee" class="rounded-xl shadow-lg w-full h-auto object-cover">
+                    </div>
+                    <div class="bg-white rounded-xl p-8 md:p-12">
+                        <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Free Returns</h3>
+                        <p class="text-gray-600 leading-relaxed mb-6 text-lg">
+                            Shop with complete confidence knowing that we stand behind our products with a 100% satisfaction guarantee. If you're not completely happy with your purchase, we'll make it right with hassle-free returns and full refunds.
+                        </p>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <i class="fas fa-check text-green-600 text-xl mr-4 mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 mb-1">30-Day Return Window</h4>
+                                    <p class="text-gray-600 text-sm">Full refund within 30 days of purchase</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-check text-green-600 text-xl mr-4 mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 mb-1">Free Return Shipping</h4>
+                                    <p class="text-gray-600 text-sm">We cover all return shipping costs</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-check text-green-600 text-xl mr-4 mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 mb-1">No Questions Asked</h4>
+                                    <p class="text-gray-600 text-sm">Straightforward return process with no hassle</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="https://bpp.com" class="btn-primary inline-block mt-8 bg-gray-900 text-white px-8 py-3 rounded-lg font-semibold hover:bg-gray-800 transform transition-all duration-300">
+                            Start Shopping
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-16 md:py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 tracking-tight">
+                    About Best Photography Products
+                </h2>
+                <p class="text-lg text-gray-600">Learn our story and what drives us forward</p>
+            </div>
+
+            <div class="space-y-8">
+                <div class="bg-gray-50 rounded-xl p-8 md:p-12">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Our Story</h3>
+                    <p class="text-gray-600 leading-relaxed text-lg mb-4">
+                        Founded in 2015, Best Photography Products was born from a simple observation: professional photographers were struggling to find affordable, high-quality LED lighting equipment that didn't compromise on performance. Our founder, a seasoned photographer himself, recognized the gap in the market and decided to bridge it. What started as a small operation in a garage has grown into a trusted supplier serving thousands of photographers, videographers, and content creators across 150+ countries. Over the past eight years, we've remained committed to our core mission of democratizing professional-grade lighting equipment, making it accessible to photographers at every skill level.
+                    </p>
+                </div>
+
+                <div class="bg-gradient-accent text-white rounded-xl p-8 md:p-12">
+                    <h3 class="text-2xl font-bold mb-4">Our Mission & Vision</h3>
+                    <p class="leading-relaxed text-lg mb-4">
+                        We believe that exceptional photography shouldn't be limited by budget constraints or access to equipment. Our mission is to empower photographers worldwide with professional-quality LED lighting solutions that inspire creativity and elevate their craft. We're driven by core values of integrity, innovation, and customer-centricity. Every product we offer is carefully selected and tested to ensure it meets our rigorous standards for quality, durability, and performance. Our vision is to become the global leader in affordable professional photography equipment, enabling millions of creators to tell their stories with stunning visual clarity and artistic excellence.
+                    </p>
+                </div>
+            </div>
+
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="p-6">
+                    <div class="text-4xl font-bold text-gray-900 mb-2">150+</div>
+                    <p class="text-gray-600">Countries Served</p>
+                </div>
+                <div class="p-6">
+                    <div class="text-4xl font-bold text-gray-900 mb-2">50K+</div>
+                    <p class="text-gray-600">Happy Customers</p>
+                </div>
+                <div class="p-6">
+                    <div class="text-4xl font-bold text-gray-900 mb-2">99.8%</div>
+                    <p class="text-gray-600">Satisfaction Rate</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 md:py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 tracking-tight">
+                    What Our Customers Say
+                </h2>
+                <p class="text-lg text-gray-600">Trusted by photographers and creators worldwide</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card bg-white rounded-xl p-8 border border-gray-200">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="ml-2 text-gray-600 text-sm font-semibold">5.0</span>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed mb-6">
+                        "The LED panels from BPP have completely transformed my studio. The color accuracy is incredible, and I've noticed a significant improvement in my client photos. The fast shipping was a huge bonus – I had everything set up within a week. At this price point, it's an absolute steal for professional-grade equipment."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-gray-300 rounded-full mr-4 flex items-center justify-center">
+                            <i class="fas fa-user text-gray-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900">Sarah Mitchell</h4>
+                            <p class="text-gray-600 text-sm">Professional Portrait Photographer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card bg-white rounded-xl p-8 border border-gray-200">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="ml-2 text-gray-600 text-sm font-semibold">5.0</span>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed mb-6">
+                        "I was skeptical about purchasing LED lights online, but BPP exceeded all my expectations. The build quality is exceptional, the dimming controls are smooth and intuitive, and the customer service team helped me choose the perfect setup for my needs. I've already recommended them to five other videographers."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-gray-300 rounded-full mr-4 flex items-center justify-center">
+                            <i class="fas fa-user text-gray-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900">James Rodriguez</h4>
+                            <p class="text-gray-600 text-sm">Content Creator & Videographer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card bg-white rounded-xl p-8 border border-gray-200">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="ml-2 text-gray-600 text-sm font-semibold">5.0</span>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed mb-6">
+                        "As a product photographer, lighting is everything. These LED panels produce consistent, flicker-free light that makes post-processing so much easier. The free returns policy gave me peace of mind, but I loved the products so much I didn't need to use it. Best investment I've made for my business this year."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-gray-300 rounded-full mr-4 flex items-center justify-center">
+                            <i class="fas fa-user text-gray-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900">Emily Chen</h4>
+                            <p class="text-gray-600 text-sm">E-commerce Product Photographer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="testimonial-card bg-white rounded-xl p-8 border border-gray-200">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="ml-2 text-gray-600 text-sm font-semibold">5.0</span>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed mb-6">
+                        "I'm a beginner photographer, and I was worried about spending too much on equipment I might not fully utilize. BPP's affordable pricing made it possible for me to start with professional-grade lighting without breaking the bank. The quality is outstanding, and their support team answered all my questions. Highly recommended for anyone starting their photography journey."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-gray-300 rounded-full mr-4 flex items-center justify-center">
+                            <i class="fas fa-user text-gray-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900">Marcus Thompson</h4>
+                            <p class="text-gray-600 text-sm">Aspiring Photographer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-16 md:py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 tracking-tight">
+                    Frequently Asked Questions
+                </h2>
+                <p class="text-lg text-gray-600">Find answers to common questions about our products and services</p>
+            </div>
+
+            <div class="space-y-4">
+                <!-- FAQ 1 -->
+                <div class="faq-item bg-white border border-gray-200 rounded-xl overflow-hidden">
+                    <button class="faq-question w-full px-8 py-6 text-left font-semibold text-gray-900 hover:bg-gray-50 transition-colors duration-300 flex items-center justify-between" onclick="toggleFAQ(this)">
+                        <span class="text-lg">What is the color temperature range of your LED panels?</span>
+                        <i class="fas fa-chevron-down text-gray-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer px-8 py-6 bg-gray-50 border-t border-gray-200">
+                        <p class="text-gray-700 leading-relaxed">
+                            Our professional LED panels offer an adjustable color temperature range from 3200K (warm white) to 5600K (daylight). This versatility allows you to match any lighting condition and achieve perfect white balance for any shooting scenario. The smooth dimming capability lets you adjust both color temperature and intensity simultaneously, giving you complete creative control over your lighting setup. Whether you're shooting indoors with tungsten lighting or outdoors in daylight, our panels adapt to your needs.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="faq-item bg-white border border-gray-200 rounded-xl overflow-hidden">
+                    <button class="faq-question w-full px-8 py-6 text-left font-semibold text-gray-900 hover:bg-gray-50 transition-colors duration-300 flex items-center justify-between" onclick="toggleFAQ(this)">
+                        <span class="text-lg">How long does shipping typically take?</span>
+                        <i class="fas fa-chevron-down text-gray-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer px-8 py-6 bg-gray-50 border-t border-gray-200">
+                        <p class="text-gray-700 leading-relaxed">
+                            We offer fast worldwide shipping with a standard delivery time of 5 business days to most countries. Orders are processed and shipped within 24 hours of purchase. We partner with reliable international logistics providers to ensure your equipment arrives safely and on schedule. You'll receive a tracking number via email as soon as your order ships, allowing you to monitor your package every step of the way. For customers requiring expedited delivery, we also offer express shipping options at checkout. Shipping is free for orders over $500, and we offer competitive rates for smaller orders.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="faq-item bg-white border border-gray-200 rounded-xl overflow-hidden">
+                    <button class="faq-question w-full px-8 py-6 text-left font-semibold text-gray-900 hover:bg-gray-50 transition-colors duration-300 flex items-center justify-between" onclick="toggleFAQ(this)">
+                        <span class="text-lg">What is your return and refund policy?</span>
+                        <i class="fas fa-chevron-down text-gray-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer px-8 py-6 bg-gray-50 border-t border-gray-200">
+                        <p class="text-gray-700 leading-relaxed">
+                            We stand behind our products with a 100% satisfaction guarantee. You have 30 days from the date of purchase to return any item for a full refund, no questions asked. Return shipping is completely free – we provide prepaid shipping labels for all returns. Simply contact our customer service team to initiate the return process. Once we receive and inspect your returned item, we'll process your refund within 5-7 business days. This policy applies to all products in their original, unused condition with original packaging. We want you to shop with complete confidence knowing that your satisfaction is our top priority.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="faq-item bg-white border border-gray-200 rounded-xl overflow-hidden">
+                    <button class="faq-question w-full px-8 py-6 text-left font-semibold text-gray-900 hover:bg-gray-50 transition-colors duration-300 flex items-center justify-between" onclick="toggleFAQ(this)">
+                        <span class="text-lg">Do you offer technical support and warranties?</span>
+                        <i class="fas fa-chevron-down text-gray-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer px-8 py-6 bg-gray-50 border-t border-gray-200">
+                        <p class="text-gray-700 leading-relaxed">
+                            Absolutely! All our LED panels come with a comprehensive 2-year manufacturer's warranty covering defects in materials and workmanship. Our dedicated technical support team is available via email at admin@bpp.com and through our website to help you with setup, troubleshooting, and optimization. We provide detailed user manuals, video tutorials, and responsive customer support to ensure you get the most out of your equipment. In the unlikely event of a hardware issue, we offer quick replacement or repair services. We also provide extended warranty options for customers seeking additional peace of mind on their professional equipment investments.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 md:py-24 bg-gray-900 text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-20" style="background-image: url('https://images.unsplash.com/photo-1504093376055-b3094b674dcb?w=1600&h=900&fit=crop&q=80'); background-size: cover; background-position: center;"></div>
+        <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-5xl font-bold mb-6 leading-tight">
+                Ready to Elevate Your Photography?
+            </h2>
+            <p class="text-xl md:text-2xl text-gray-200 mb-10 leading-relaxed">
+                Join thousands of photographers who've transformed their work with our professional LED lighting solutions
+            </p>
+            <a href="https://bpp.com" class="btn-primary inline-block bg-white text-gray-900 px-8 md:px-12 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transform transition-all duration-300 shadow-lg">
+                Shop Now & Save <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 md:py-24 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 tracking-tight">
+                    Get In Touch
+                </h2>
+                <p class="text-lg text-gray-600">Have questions? We're here to help!</p>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg p-8 md:p-12">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                    <div class="text-center">
+                        <div class="flex items-center justify-center w-16 h-16 bg-gray-100 rounded-lg mx-auto mb-4">
+                            <i class="fas fa-envelope text-2xl text-gray-900"></i>
+                        </div>
+                        <h3 class="font-bold text-gray-900 mb-2">Email</h3>
+                        <a href="mailto:admin@bpp.com" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">
+                            admin@bpp.com
+                        </a>
+                    </div>
+                    <div class="text-center">
+                        <div class="flex items-center justify-center w-16 h-16 bg-gray-100 rounded-lg mx-auto mb-4">
+                            <i class="fas fa-globe text-2xl text-gray-900"></i>
+                        </div>
+                        <h3 class="font-bold text-gray-900 mb-2">Website</h3>
+                        <a href="https://bpp.com" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">
+                            bpp.com
+                        </a>
+                    </div>
+                    <div class="text-center">
+                        <div class="flex items-center justify-center w-16 h-16 bg-gray-100 rounded-lg mx-auto mb-4">
+                            <i class="fas fa-clock text-2xl text-gray-900"></i>
+                        </div>
+                        <h3 class="font-bold text-gray-900 mb-2">Support Hours</h3>
+                        <p class="text-gray-600">Monday - Friday<br>9am - 6pm EST</p>
+                    </div>
+                </div>
+
+                <form class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <input type="text" placeholder="Your Name" class="w-full px-6 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-400 transition-all duration-300" required>
+                        <input type="email" placeholder="Your Email" class="w-full px-6 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-400 transition-all duration-300" required>
+                    </div>
+                    <input type="text" placeholder="Subject" class="w-full px-6 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-400 transition-all duration-300" required>
+                    <textarea placeholder="Your Message" rows="6" class="w-full px-6 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-400 transition-all duration-300 resize-none" required></textarea>
+                    <button type="submit" class="btn-primary w-full bg-gray-900 text-white px-8 py-4 rounded-lg font-semibold hover:bg-gray-800 transform transition-all duration-300">
+                        Send Message <i class="fas fa-paper-plane ml-2"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                <!-- Column 1: Company Info -->
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-camera text-2xl text-white mr-2"></i>
+                        <span class="text-xl font-bold text-white">BPP</span>
+                    </div>
+                    <p class="text-gray-400 leading-relaxed mb-6">
+                        Best Photography Products - Providing professional-grade LED lighting equipment to photographers worldwide since 2015.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-white hover:bg-gray-700 transition-colors duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-white hover:bg-gray-700 transition-colors duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-white hover:bg-gray-700 transition-colors duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-white hover:bg-gray-700 transition-colors duration-300">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div>
+                    <h3 class="text-white font-bold text-lg mb-6">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition-colors duration-300">Home</a></li>
+                        <li><a href="#features" class="text-gray-400 hover:text-white transition-colors duration-300">Features</a></li>
+                        <li><a href="#benefits" class="text-gray-400 hover:text-white transition-colors duration-300">Benefits</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition-colors duration-300">About Us</a></li>
+                        <li><a href="#testimonials" class="text-gray-400 hover:text-white transition-colors duration-300">Testimonials</a></li>
+                        <li><a href="#faq" class="text-gray-400 hover:text-white transition-colors duration-300">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Products & Support -->
+                <div>
+                    <h3 class="text-white font-bold text-lg mb-6">Support</h3>
+                    <ul class="space-y-3">
+                        <li><a href="https://bpp.com" class="text-gray-400 hover:text-white transition-colors duration-300">Shop Products</a></li>
+                        <li><a href="mailto:admin@bpp.com" class="text-gray-400 hover:text-white transition-colors duration-300">Contact Support</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Shipping Info</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Track Order</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Warranty Info</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Legal & Resources -->
+                <div>
+                    <h3 class="text-white font-bold text-lg mb-6">Resources</h3>
+                    <ul class="space-y-3">
+                        <li><a href="privacy.html" class="text-gray-400 hover:text-white transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="text-gray-400 hover:text-white transition-colors duration-300">Terms of Service</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-white transition-colors duration-300">Blog</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Guides & Tutorials</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Affiliate Program</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="border-t border-gray-800 pt-8">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
+                    <div class="text-center md:text-left">
+                        <p class="text-gray-400 text-sm">
+                            &copy; 2024 Best Photography Products. All rights reserved.
+                        </p>
+                    </div>
+                    <div class="text-center">
+                        <div class="flex items-center justify-center space-x-2 text-gray-400 text-sm">
+                            <i class="fas fa-lock"></i>
+                            <span>Secure & Encrypted</span>
+                        </div>
+                    </div>
+                    <div class="text-center md:text-right">
+                        <div class="flex items-center justify-center md:justify-end space-x-4 text-gray-400 text-sm">
+                            <span>Payment Methods:</span>
+                            <i class="fab fa-cc-visa"></i>
+                            <i class="fab fa-cc-mastercard"></i>
+                            <i class="fab fa-cc-paypal"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        function toggleMobileMenu() {
+            const mobileMenu = document.querySelector('.mobile-menu');
+            mobileMenu.classList.toggle('show');
+        }
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.querySelector('.mobile-menu').classList.remove('show');
+            });
+        });
+
+        // FAQ Toggle
+        function toggleFAQ(button) {
+            const faqItem = button.closest('.faq-item');
+            const isActive = faqItem.classList.contains('active');
+            
+            // Close all other FAQ items
+            document.querySelectorAll('.faq-item').forEach(item => {
+                item.classList.remove('active');
+            });
+            
+            // Toggle current item
+            if (!isActive) {
+                faqItem.classList.add('active');
+            }
+        }
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#' && document.querySelector(href)) {
+                    e.preventDefault();
+                    document.querySelector(href).scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll animation to elements
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.feature-card, .testimonial-card').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'all 600ms ease-out';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
